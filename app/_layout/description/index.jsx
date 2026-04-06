@@ -280,7 +280,7 @@ export function Description() {
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           >
             <Image
-              src='/image2.png'
+              src='/Image2.png'
               alt='Content creation'
               fill
               className='object-cover'
