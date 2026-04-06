@@ -285,6 +285,7 @@ export function Description() {
               fill
               className='object-cover'
               priority
+              unoptimized
             />
           </motion.div>
         </div>
