@@ -1,0 +1,31 @@
+import {
+  Contact,
+  Description,
+  Header,
+  Navbar,
+  Project,
+  Thumbnail,
+  Transition,
+} from '@/layout';
+
+/** @type {import('next').Metadata} */
+export const metadata = {
+  title: 'Home | Phani shankar P',
+  description:
+    'I’m a passionate Content Creator specializing in travel, photography, and cinematic video editing.I create aesthetic visual content that focuses on storytelling, mood, and engagement. From capturing real travel experiences to editing cinematic reels, I aim to turn simple moments into impactful visuals.Skilled in tools like Lightroom, and Canva, I focus on creating content that connects with audiences and builds a strong visual identity.Currently exploring opportunities in content creation, social media, and visual storytelling. © Code by Phani',
+};
+
+export default function Home() {
+  return (
+    <Transition>
+      <Navbar />
+      <Header />
+      <main>
+        <Description />
+        <Thumbnail />
+        <Project />
+      </main>
+      <Contact />
+    </Transition>
+  );
+}
