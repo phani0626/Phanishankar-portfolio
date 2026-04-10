@@ -9,186 +9,61 @@ import Link from 'next/link';
 
 const CapCutIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48' fill='none'>
-    <rect width='48' height='48' rx='12' fill='#000' />
-    <circle cx='17' cy='20' r='3' fill='#fff' />
-    <circle cx='17' cy='28' r='3' fill='#fff' />
-    <line
-      x1='17'
-      y1='20'
-      x2='33'
-      y2='14'
-      stroke='#fff'
-      strokeWidth='2.5'
-      strokeLinecap='round'
-    />
-    <line
-      x1='17'
-      y1='28'
-      x2='33'
-      y2='34'
-      stroke='#fff'
-      strokeWidth='2.5'
-      strokeLinecap='round'
-    />
+    <image href='/capcut.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 
 const LightroomIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48'>
-    <rect width='48' height='48' rx='10' fill='#31A8FF' />
-    <text
-      x='8'
-      y='34'
-      fontFamily='Arial Black, sans-serif'
-      fontWeight='900'
-      fontSize='22'
-      fill='#001E36'
-    >
-      Lr
-    </text>
+    <image href='/photoshop-lightroom.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 
 const PhotoshopIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48'>
-    <rect width='48' height='48' rx='10' fill='#31A8FF' />
-    <text
-      x='5'
-      y='34'
-      fontFamily='Arial Black, sans-serif'
-      fontWeight='900'
-      fontSize='22'
-      fill='#001E36'
-    >
-      Ps
-    </text>
+    <image href='/photoshop.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 
 const FigmaIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48' fill='none'>
-    <rect width='48' height='48' rx='10' fill='#1E1E1E' />
-    <path d='M19 38a5 5 0 005-5v-5h-5a5 5 0 000 10z' fill='#0ACF83' />
-    <path d='M14 24a5 5 0 015-5h5v10h-5a5 5 0 01-5-5z' fill='#A259FF' />
-    <path d='M14 14a5 5 0 015-5h5v10h-5a5 5 0 01-5-5z' fill='#F24E1E' />
-    <path d='M24 9h5a5 5 0 010 10h-5V9z' fill='#FF7262' />
-    <path d='M34 24a5 5 0 11-10 0 5 5 0 0110 0z' fill='#1ABCFE' />
+    <image href='/figma.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 
 const CanvaIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48' fill='none'>
-    <rect width='48' height='48' rx='24' fill='#7D2AE8' />
-    <text
-      x='10'
-      y='33'
-      fontFamily='Georgia, serif'
-      fontWeight='900'
-      fontSize='26'
-      fill='#fff'
-    >
-      C
-    </text>
+    <image href='/canva.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 
 const SnapseedIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48' fill='none'>
-    <rect width='48' height='48' rx='12' fill='#4285F4' />
-    <circle cx='24' cy='24' r='9' fill='none' stroke='#fff' strokeWidth='3' />
-    <circle cx='24' cy='24' r='4' fill='#fff' />
-    <line
-      x1='24'
-      y1='10'
-      x2='24'
-      y2='14'
-      stroke='#fff'
-      strokeWidth='2.5'
-      strokeLinecap='round'
-    />
-    <line
-      x1='24'
-      y1='34'
-      x2='24'
-      y2='38'
-      stroke='#fff'
-      strokeWidth='2.5'
-      strokeLinecap='round'
-    />
-    <line
-      x1='10'
-      y1='24'
-      x2='14'
-      y2='24'
-      stroke='#fff'
-      strokeWidth='2.5'
-      strokeLinecap='round'
-    />
-    <line
-      x1='34'
-      y1='24'
-      x2='38'
-      y2='24'
-      stroke='#fff'
-      strokeWidth='2.5'
-      strokeLinecap='round'
-    />
+    <image href='/snapseed.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 
 const VNEditorIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48' fill='none'>
-    <rect width='48' height='48' rx='12' fill='#FF6B35' />
-    <text
-      x='8'
-      y='34'
-      fontFamily='Arial Black, sans-serif'
-      fontWeight='900'
-      fontSize='20'
-      fill='#fff'
-    >
-      VN
-    </text>
+    <image href='/vneditor.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 
 const AlightMotionIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48' fill='none'>
-    <rect width='48' height='48' rx='12' fill='#1A1A2E' />
-    <polygon points='24,10 34,36 28,36 24,26 20,36 14,36' fill='#E94560' />
-    <line x1='18' y1='30' x2='30' y2='30' stroke='#E94560' strokeWidth='2.5' />
+    <image href='/alight.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 
 const PremiereIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48'>
-    <rect width='48' height='48' rx='10' fill='#9999FF' />
-    <text
-      x='5'
-      y='34'
-      fontFamily='Arial Black, sans-serif'
-      fontWeight='900'
-      fontSize='22'
-      fill='#0D0032'
-    >
-      Pr
-    </text>
+    <image href='/premiere-pro.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 
 const AfterEffectsIcon = () => (
   <svg viewBox='0 0 48 48' width='48' height='48'>
-    <rect width='48' height='48' rx='10' fill='#9999FF' />
-    <text
-      x='5'
-      y='34'
-      fontFamily='Arial Black, sans-serif'
-      fontWeight='900'
-      fontSize='22'
-      fill='#0D0032'
-    >
-      Ae
-    </text>
+    <image href='/after-effects.png' x='0' y='0' width='48' height='48' />
   </svg>
 );
 

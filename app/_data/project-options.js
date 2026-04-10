@@ -14,7 +14,7 @@ export const projectOptions = {
     },
     {
       type: 'video',
-      source: '/video2.mp4',
+      source: '/waterfalls.mp4',
     },
   ],
   second: [
