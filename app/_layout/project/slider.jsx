@@ -1,5 +1,8 @@
 'use client';
 
+import { useRef } from 'react';
+
+import Image from 'next/image';
 import { CldImage, CldVideoPlayer } from 'next-cloudinary';
 
 import { Center } from '@/components';
@@ -10,27 +13,77 @@ import { Center } from '@/components';
  * @param {string} props.source
  */
 export function ProjectSlider({ type, source }) {
+  const videoRef = useRef(null);
+
+  const handleVideoMouseEnter = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = false;
+      videoRef.current.play();
+    }
+  };
+
+  const handleVideoMouseLeave = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+    }
+  };
+
+  // Check if source is a local image path (starts with /)
+  const isLocalImage = type === 'image' && source.startsWith('/');
+
   const image =
     type === 'image' ? (
-      <CldImage
-        src={source}
-        className='object-cover'
-        fill={true}
-        alt='project items'
-      />
+      isLocalImage ? (
+        <Image
+          src={source}
+          className='object-cover'
+          fill={true}
+          alt='project items'
+          sizes='(max-width: 768px) 100vw, 25vw'
+        />
+      ) : (
+        <CldImage
+          src={source}
+          className='object-cover'
+          fill={true}
+          alt='project items'
+        />
+      )
     ) : null;
+  // Check if source is a local video path (starts with /)
+  const isLocalVideo = type === 'video' && source.startsWith('/');
+
   const video =
     type === 'video' ? (
-      <CldVideoPlayer
-        src={source}
-        loop={true}
-        controls={false}
-        muted={true}
-        autoPlay='always'
-        width='100%'
-        height='100%'
-        className='!static !bg-transparent'
-      />
+      isLocalVideo ? (
+        <video
+          ref={videoRef}
+          src={source}
+          loop
+          controls={false}
+          muted
+          autoPlay
+          className='size-full cursor-pointer object-cover'
+          onMouseEnter={handleVideoMouseEnter}
+          onMouseLeave={handleVideoMouseLeave}
+        />
+      ) : (
+        <div
+          onMouseEnter={handleVideoMouseEnter}
+          onMouseLeave={handleVideoMouseLeave}
+        >
+          <CldVideoPlayer
+            src={source}
+            loop={true}
+            controls={false}
+            muted={true}
+            autoPlay='always'
+            width='100%'
+            height='100%'
+            className='!static !bg-transparent'
+          />
+        </div>
+      )
     ) : null;
 
   return (

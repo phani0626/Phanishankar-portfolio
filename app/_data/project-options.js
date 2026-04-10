@@ -2,19 +2,19 @@ export const projectOptions = {
   first: [
     {
       type: 'image',
-      source: 'Dennis-Portfolio/images/rpmf9egswyd8563mxe9t',
+      source: '/sunrise.webp',
     },
     {
       type: 'video',
-      source: 'Dennis-Portfolio/videos/fldn3dntkusr22roeybr',
+      source: '/waterfalls.mp4',
     },
     {
       type: 'image',
-      source: 'Dennis-Portfolio/images/k7bp2wbfmalpjfk3yk5q',
+      source: '/kodaikanal.jpg',
     },
     {
       type: 'video',
-      source: 'Dennis-Portfolio/videos/x8w8sbohl5wkfuelmkhu',
+      source: '/video2.mp4',
     },
   ],
   second: [
