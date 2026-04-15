@@ -52,20 +52,20 @@ export const thumbnailOptions = [
   },
   {
     href: '/photography',
-    title: 'Photo & Videography',
+    title: 'Photography',
     image: '/Image1.jpeg',
     media: [
-      { type: 'video', src: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+      { type: 'image', src: '/Image2.jpeg' },
       { type: 'image', src: '/Photo10.jpg' },
       { type: 'image', src: '/Photo19.jpg' },
     ],
   },
   {
-    href: '/fitness-trainer',
-    title: 'Fitness Trainer',
+    href: '/videography',
+    title: 'Videography',
     image: '/Image3.jpeg',
     media: [
-      { type: 'image', src: '/Image2.jpeg' },
+      { type: 'video', src: 'https://www.w3schools.com/html/mov_bbb.mp4' },
       { type: 'image', src: '/Photo20.jpg' },
       { type: 'image', src: '/Photo6.jpg' },
     ],

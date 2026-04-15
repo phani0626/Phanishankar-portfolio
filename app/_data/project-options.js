@@ -10,29 +10,29 @@ export const projectOptions = {
     },
     {
       type: 'image',
-      source: '/kodaikanal.jpg',
+      source: '/243.jpg',
     },
     {
       type: 'video',
-      source: '/waterfalls.mp4',
+      source: '/24.MP4',
     },
   ],
   second: [
     {
-      type: 'image',
-      source: 'Dennis-Portfolio/images/r4kcbkvkl0djjt0mxmcw',
+      type: 'video',
+      source: '/244.MP4',
     },
     {
       type: 'video',
-      source: 'Dennis-Portfolio/videos/q0yepc6dssbosmdk3isu',
+      source: '/241.MP4',
     },
     {
       type: 'image',
-      source: 'Dennis-Portfolio/images/ffoc9zsoeusptc7jcid5',
+      source: '/245.PNG',
     },
     {
       type: 'video',
-      source: 'Dennis-Portfolio/videos/usiswniv5qhgu2vamhnx',
+      source: '/242.MP4',
     },
   ],
 };
